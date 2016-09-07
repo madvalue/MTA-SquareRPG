@@ -1,0 +1,4 @@
+<meta>
+	<script src="kurier_client.lua" type="client" />
+	<script src="kurier_server.lua" type="server" />
+</meta>

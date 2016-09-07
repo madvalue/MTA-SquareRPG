@@ -1,0 +1,6 @@
+<meta>
+	<script src="jobs_client.lua" type="client" />
+	<script src="jobs_server.lua" type="server" />
+	
+	<file src="html/job.html" />
+</meta>

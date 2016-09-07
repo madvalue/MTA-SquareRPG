@@ -1,0 +1,6 @@
+<meta>
+	<script src="ciucholand_client.lua" type="client" />
+	<script src="ciucholand_server.lua" type="server" />
+	
+	<file src="html/ciucholand.html" />
+</meta>

@@ -1,0 +1,8 @@
+<meta>
+	<script src="base_server.lua" type="server" />
+	<script src="id_server.lua" type="server" />
+	<script src="players_client.lua" type="client" />
+	<script src="players_server.lua" type="server" />
+	<script src="chat_server.lua" type="server" />
+	<script src="death_server.lua" type="server" />
+</meta>

@@ -1,0 +1,16 @@
+<map edf:definitions="editor_main">
+    <object id="object (cn2_savgardr2_) (1)" breakable="true" interior="0" alpha="255" model="16501" doublesided="false" scale="1" dimension="0" posX="-1696.1" posY="1252.2" posZ="8.4" rotX="0" rotY="0" rotZ="225"></object>
+    <object id="object (cn2_savgardr2_) (2)" breakable="true" interior="0" alpha="255" model="16501" doublesided="false" scale="1" dimension="0" posX="-1701.8" posY="1257.9" posZ="8.4" rotX="0" rotY="0" rotZ="225"></object>
+    <object id="object (cn2_savgardr2_) (3)" breakable="true" interior="0" alpha="255" model="16501" doublesided="false" scale="1" dimension="0" posX="-1707.8" posY="1264" posZ="8.4" rotX="0" rotY="0" rotZ="225"></object>
+    <object id="object (cn2_savgardr2_) (5)" breakable="true" interior="0" alpha="255" model="16501" doublesided="false" scale="1" dimension="0" posX="-1713.5" posY="1269.7" posZ="8.4" rotX="0" rotY="0" rotZ="225"></object>
+    <object id="object (cn2_savgardr2_) (6)" breakable="true" interior="0" alpha="255" model="16501" doublesided="false" scale="1" dimension="0" posX="-1719.2" posY="1275.4" posZ="8.4" rotX="0" rotY="0" rotZ="225"></object>
+    <object id="object (posterv) (1)" breakable="true" interior="0" alpha="255" model="18066" doublesided="false" scale="3.96" dimension="0" posX="-1713.5" posY="1269.7" posZ="10.874" rotX="0" rotY="0" rotZ="135"></object>
+    <object id="object (posterv) (2)" breakable="true" interior="0" alpha="255" model="18066" doublesided="false" scale="3.96" dimension="0" posX="-1701.7" posY="1257.9" posZ="10.87" rotX="0" rotY="0" rotZ="134.995"></object>
+    <object id="object (veg_pol_window) (1)" breakable="true" interior="0" alpha="255" model="14902" doublesided="false" scale="1" dimension="0" posX="-1730.3" posY="1265.7" posZ="6.2" rotX="0" rotY="0" rotZ="315"></object>
+    <object id="object (veg_pol_window) (2)" breakable="true" interior="0" alpha="255" model="14902" doublesided="false" scale="1" dimension="0" posX="-1707.3" posY="1242.6" posZ="6.2" rotX="0" rotY="0" rotZ="314.5"></object>
+    <object id="object (Gen_doorSHOP3) (1)" breakable="true" interior="0" alpha="255" model="1522" doublesided="false" scale="1" dimension="0" posX="-1702.9" posY="1259.1" posZ="6.2" rotX="0" rotY="0" rotZ="314.75"></object>
+    <object id="object (Gen_doorSHOP3) (2)" breakable="true" interior="0" alpha="255" model="1522" doublesided="false" scale="1" dimension="0" posX="-1701.9" posY="1258.1" posZ="6.2" rotX="0" rotY="0" rotZ="314.747"></object>
+    <object id="object (Stonebench1) (1)" breakable="true" interior="0" alpha="255" model="1256" doublesided="false" scale="1" dimension="0" posX="-1699" posY="1256" posZ="6.9" rotX="0" rotY="0" rotZ="226"></object>
+    <object id="object (nf_blackboard) (1)" breakable="true" interior="0" alpha="255" model="3077" doublesided="false" scale="1" dimension="0" posX="-1692.7" posY="1251.6" posZ="6.2" rotX="0" rotY="0" rotZ="20"></object>
+    <object id="object (bin1) (1)" breakable="true" interior="0" alpha="255" model="1300" doublesided="false" scale="1" dimension="0" posX="-1703.5" posY="1260.4" posZ="6.6" rotX="0" rotY="0" rotZ="314"></object>
+</map>

@@ -1,0 +1,5 @@
+<meta>
+    <map src="outside.map" />
+    <map src="interior.map" />
+	<script src="ro_server.lua" type="server" />
+</meta>

@@ -1,0 +1,6 @@
+<meta>
+	<script src="bankomaty_client.lua" type="client" />
+	<script src="bankomaty_server.lua" type="server" />
+	
+	<file src="html/bankomat.html" cache="false"/>
+</meta>

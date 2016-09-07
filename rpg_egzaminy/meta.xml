@@ -1,0 +1,6 @@
+<meta>
+	<script src="prawko_client.lua" type="client" />
+	<script src="prawko_server.lua" type="server" />
+	
+	<file src="html/prawko.html" />
+</meta>

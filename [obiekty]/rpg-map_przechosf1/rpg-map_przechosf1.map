@@ -1,0 +1,10 @@
+<map edf:definitions="editor_main">
+    <object id="object (lhouse_barrier2) (1)" breakable="true" interior="0" alpha="255" model="994" doublesided="false" scale="1" dimension="0" posX="-2418" posY="1037.3" posZ="49.4" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (lhouse_barrier2) (2)" breakable="true" interior="0" alpha="255" model="994" doublesided="false" scale="1" dimension="0" posX="-2424.2" posY="1037.3" posZ="49.4" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (lhouse_barrier2) (3)" breakable="true" interior="0" alpha="255" model="994" doublesided="false" scale="1" dimension="0" posX="-2430.3999" posY="1037.3" posZ="49.4" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (lhouse_barrier2) (4)" breakable="false" interior="0" alpha="255" model="994" doublesided="false" scale="1" dimension="0" posX="-2433.1001" posY="1037.3" posZ="49.4" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (lhouse_barrier2) (6)" breakable="true" interior="0" alpha="255" model="994" doublesided="false" scale="1" dimension="0" posX="-2433.1001" posY="1031.1" posZ="49.4" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (arrows01_lvs) (1)" breakable="true" interior="0" alpha="255" model="8843" doublesided="false" scale="1" dimension="0" posX="-2420.8999" posY="1041.2" posZ="49.4" rotX="0" rotY="0" rotZ="90"></object>
+    <object id="object (arrows01_lvs) (2)" breakable="true" interior="0" alpha="255" model="8843" doublesided="false" scale="1" dimension="0" posX="-2420.8999" posY="1032.7" posZ="49.4" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (arrows01_lvs) (3)" breakable="true" interior="0" alpha="255" model="8843" doublesided="false" scale="1" dimension="0" posX="-2437.3999" posY="1028.8" posZ="49.4" rotX="0" rotY="0" rotZ="180"></object>
+</map>

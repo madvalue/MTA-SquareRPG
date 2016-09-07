@@ -1,0 +1,4 @@
+<meta>
+	<script src="hud_client.lua" type="client" />
+	<script src="hud_server.lua" type="server" />
+</meta>

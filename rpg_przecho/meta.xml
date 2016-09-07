@@ -1,0 +1,6 @@
+<meta>
+	<script src="przecho_client.lua" type="client" />
+	<script src="przecho_server.lua" type="server" />
+	
+	<file src="html/przecho.html" />
+</meta>

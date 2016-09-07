@@ -1,0 +1,6 @@
+<meta>
+	<script src="sweeperki_client.lua" type="client" />
+	<script src="sweeperki_server.lua" type="server" />
+	
+	<export function="destroyJobsWindow" type="server" />
+</meta>

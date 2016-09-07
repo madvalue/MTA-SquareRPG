@@ -1,0 +1,5 @@
+<meta>
+	<script src="mysql_server.lua" type="server" />
+
+	<export function="mysql_query" type="server" />
+</meta>

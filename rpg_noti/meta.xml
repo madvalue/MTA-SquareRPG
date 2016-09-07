@@ -1,0 +1,7 @@
+<meta>
+	<script src="noti_client.lua" type="client" />
+	<script src="noti_server.lua" type="server" />
+
+	<export function="createNotification" type="client" />
+	<export function="createNotification" type="server" />
+</meta>

@@ -1,0 +1,183 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script>
+			function select(id)
+			{
+				mta.triggerEvent("clickAccept", id);
+			}
+			function closeWindow()
+			{
+				mta.triggerEvent("destroyPrzechoWindow");
+			}
+			function addVehicle(name, uid)
+			{
+				var createA = document.createElement('a');
+				var createAText = document.createTextNode(name+" (UID: "+uid+")");
+				createA.setAttribute('id', uid);
+				createA.setAttribute('onclick', "select(this.id)");
+				createA.appendChild(createAText);
+				document.getElementById("lista").appendChild(createA);
+			}
+		</script>
+		<style>
+			body
+			{
+				font-family: "Arial", Sans-serif;
+				margin: 0 !important;
+				color: #eeeeee;
+			}
+			#login
+			{
+				background: rgba(30,30,30,1);
+				padding: 0px;
+				width: 250px;
+				height: 500px;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
+			#login .text
+			{
+				color: rgb(230, 230, 230);
+				font-size: 43px;
+				margin-top: 10px;
+				margin-left: 10px;
+				margin-bottom: 30px;
+			}
+			#login .info
+			{
+				color: rgb(230, 230, 230);
+				padding: 8px;
+				font-size: 14px;
+				text-align: left;
+				margin-left: auto;
+				margin-right: auto;
+				width: 250px;
+			}
+			input[type='text'],
+			input[type='password']
+			{
+				background: rgba(50, 50, 50, 1);
+				border: 0;
+				width: 250px;
+				padding: 8px;
+				border-bottom: 2px solid rgba(0,0,0,0.2);
+				margin-bottom: 10px;
+				color: rgb(230, 230, 230);
+				outline: none;
+				transition: all 0.3s ease;
+			}
+			input[type='text']:focus,
+			input[type='password']:focus
+			{
+				border-bottom: 2px solid rgba(255,200,0,1);
+			}
+			input[type='submit']
+			{
+				background: rgba(250, 200, 0, 1);
+				font-weight: bold;
+				color: rgb(30, 30, 30);
+				border: 0;
+				width: 246px;
+				padding: 8px;
+				margin-bottom: 2px;
+				outline: none;
+				transition: all 0.3s ease;
+				margin-left: 0px;
+			}
+			input[type='submit']:hover
+			{
+				background: rgba(250, 210, 0, 1);
+			}
+			.title
+			{
+				display: inline-block;
+				width: 86%;
+				padding: 8px 8px 2px 15px;
+				color: rgb(255, 255, 255);
+				text-decoration: none;
+				margin-left: 1px;
+				transition: all 0.3s ease;
+				text-align:left;
+			}
+			a
+			{
+				display: inline-block;
+				width: 85%;
+				padding: 4px 18px 3px 12px;
+				color: rgb(200, 200, 200);
+				text-decoration: none;
+				transition: all 0.3s ease;
+				text-align:left;
+			}
+			a:hover
+			{
+				background: rgba(250, 200, 0, 1);
+				color: rgb(30, 30, 30);
+			}
+			#lista
+			{
+				overflow: auto;
+				height: 413px;
+				margin-bottom: 10px;
+			}
+			#lista::-webkit-scrollbar 
+			{
+				width: 1em;
+			}
+			#lista::-webkit-scrollbar-track 
+			{
+				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+			}
+			#lista::-webkit-scrollbar-thumb 
+			{
+				background-color: rgb(50, 50, 50);
+				outline: 1px solid slategrey;
+			}
+		</style>
+	</head>
+	<body>
+	<section id="login">
+		<section style="text-align:left;padding:8px;font-size:25px;margin-left:10px">Odbiór pojazdu</section>
+		<section id="lista">
+			<!--span class="title">Skiny męskie</span>
+			<script>
+				for (i=0; i<skiny_m.length; i++)
+				{
+					var createA = document.createElement('a');
+					var createAText = document.createTextNode("Ubranie #"+skiny_m[i]);
+					createA.setAttribute('id', skiny_m[i]);
+					createA.setAttribute('onclick', "applySkin(this.id, 'false')");
+					createA.appendChild(createAText);
+					document.getElementById("lista").appendChild(createA);
+				}
+			</script>
+			<span class="title">Skiny kobiece</span>
+			<script>
+				for (i=0; i<skiny_k.length; i++)
+				{
+					var createA = document.createElement('a');
+					var createAText = document.createTextNode("Ubranie #"+skiny_k[i]);
+					createA.setAttribute('id', skiny_k[i]);
+					createA.setAttribute('onclick', "applySkin(this.id, 'false')");
+					createA.appendChild(createAText);
+					document.getElementById("lista").appendChild(createA);
+				}
+			</script>
+			<span class="title" style="color:rgb(255,200,0);">Skiny premium</span>
+			<script>
+				for (i=0; i<skiny_premium.length; i++)
+				{
+					var createA = document.createElement('a');
+					var createAText = document.createTextNode("Ubranie #"+skiny_premium[i]);
+					createA.setAttribute('id', skiny_premium[i]);
+					createA.setAttribute('onclick', "applySkin(this.id, 'true')");
+					createA.appendChild(createAText);
+					document.getElementById("lista").appendChild(createA);
+				}
+			</script-->
+		</section>
+		<input type="submit" value="Zamknij" onclick="closeWindow()"/>
+	</section>
+		

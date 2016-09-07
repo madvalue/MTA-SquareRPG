@@ -1,0 +1,7 @@
+<meta>
+	<script src="accounts_client.lua" type="client" />
+	<script src="accounts_server.lua" type="server" />
+	
+	<file src="html/login.html" />
+	<file src="html/register.html" />
+</meta>

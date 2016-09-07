@@ -1,0 +1,9 @@
+<meta>
+	<script src="admin_client.lua" type="client" />
+	<script src="admin_server.lua" type="server" />
+	<script src="commands_client.lua" type="client" />
+	<script src="commands_server.lua" type="server" />
+	
+	<export function="addToEcho" type="client" />
+	<export function="addToEcho" type="server" />
+</meta>

@@ -1,0 +1,5 @@
+<meta>
+	<script src="pomoc_client.lua" type="client" />
+	
+	<file src="html/pomoc.html" />
+</meta>

@@ -1,0 +1,5 @@
+<meta>
+	<script src="ped_client.lua" type="client" />
+	<script src="styles_client.lua" type="client" />
+	<script src="blips_server.lua" type="server" />
+</meta>

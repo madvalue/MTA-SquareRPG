@@ -1,0 +1,4 @@
+<meta>
+    <map src="outside.map"/>
+	<script src="ro_server.lua" type="server" />
+</meta>

@@ -1,0 +1,4 @@
+<meta>
+	<script src="kosiarki_client.lua" type="client" />
+	<script src="kosiarki_server.lua" type="server" />
+</meta>

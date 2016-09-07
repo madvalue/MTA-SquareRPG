@@ -1,0 +1,283 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script>
+			
+			function changeColorA1(e)
+			{
+				document.getElementById("ka1").style.color = "rgb(30, 30, 30)";
+				document.getElementById("ka2").style.color = "rgb(30, 30, 30)";
+				document.getElementById("ka3").style.color = "rgb(30, 30, 30)";
+			};
+			function changeColorA2(e)
+			{
+				document.getElementById("ka1").style.color = "#eeeeee";
+				document.getElementById("ka2").style.color = "#eeeeee";
+				if (document.getElementById("ka3").innerHTML == "TAK")
+				{
+					document.getElementById("ka3").style.color = "#00ff00";
+				}
+				else
+				{
+					document.getElementById("ka3").style.color = "#ff0000";
+				}
+			};
+			
+			function changeColorB1(e)
+			{
+				document.getElementById("kb1").style.color = "rgb(30, 30, 30)";
+				document.getElementById("kb2").style.color = "rgb(30, 30, 30)";
+				document.getElementById("kb3").style.color = "rgb(30, 30, 30)";
+			};
+			function changeColorB2(e)
+			{
+				document.getElementById("kb1").style.color = "#eeeeee";
+				document.getElementById("kb2").style.color = "#eeeeee";
+				if (document.getElementById("kb3").innerHTML == "TAK")
+				{
+					document.getElementById("kb3").style.color = "#00ff00";
+				}
+				else
+				{
+					document.getElementById("kb3").style.color = "#ff0000";
+				}
+			};
+			
+			function changeColorC1(e)
+			{
+				document.getElementById("kc1").style.color = "rgb(30, 30, 30)";
+				document.getElementById("kc2").style.color = "rgb(30, 30, 30)";
+				document.getElementById("kc3").style.color = "rgb(30, 30, 30)";
+			};
+			function changeColorC2(e)
+			{
+				document.getElementById("kc1").style.color = "#eeeeee";
+				document.getElementById("kc2").style.color = "#eeeeee";
+				if (document.getElementById("kc3").innerHTML == "TAK")
+				{
+					document.getElementById("kc3").style.color = "#00ff00";
+				}
+				else
+				{
+					document.getElementById("kc3").style.color = "#ff0000";
+				}
+			};
+		
+		
+			function setKategorie(kata, katb, katc)
+			{
+				document.getElementById("loading").style.display = "none";
+				document.getElementById("a").style.display = "block";
+				document.getElementById("kategoriaa").style.display = "block";
+				document.getElementById("kategoriab").style.display = "block";
+				document.getElementById("kategoriac").style.display = "block";
+				document.getElementById("buttonc").style.display = "block";
+				
+				if (kata == true)
+				{
+					document.getElementById("ka3").innerHTML = "TAK";
+					document.getElementById("ka3").style.color = "#00ff00";
+				}
+				else
+				{
+					document.getElementById("ka3").innerHTML = "NIE";
+					document.getElementById("ka3").style.color = "#FF0000";
+				}
+				if (katb == true)
+				{
+					document.getElementById("kb3").innerHTML = "TAK";
+					document.getElementById("kb3").style.color = "#00ff00";
+				}
+				else
+				{
+					document.getElementById("kb3").innerHTML = "NIE";
+					document.getElementById("kb3").style.color = "#FF0000";
+				}
+				if (katc == true)
+				{
+					document.getElementById("kc3").innerHTML = "TAK";
+					document.getElementById("kc3").style.color = "#00ff00";
+				}
+				else
+				{
+					document.getElementById("kc3").innerHTML = "NIE";
+					document.getElementById("kc3").style.color = "#FF0000";
+				}
+			}
+			
+			function clickClose()
+			{
+				mta.triggerEvent("closeWindow");
+			}
+			
+			function processPrawko(kat)
+			{
+				mta.triggerEvent("processPrawko", kat);
+			}
+			
+		</script>
+		<style>
+			body
+			{
+				font-family: "Arial", Sans-serif;
+				margin: 0 !important;
+				color: #eeeeee;
+			}
+			#login
+			{
+				background: rgba(30,30,30,1);
+				padding: 0px;
+				width: 500px;
+				height: 300px;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
+			#login .text
+			{
+				color: rgb(230, 230, 230);
+				font-size: 23px;
+				margin-top: 10px;
+				margin-left: 10px;
+				margin-bottom: 30px;
+			}
+			#login .info
+			{
+				color: rgb(230, 230, 230);
+				padding: 8px;
+				font-size: 14px;
+				text-align: left;
+				margin-left: auto;
+				margin-right: auto;
+				width: 250px;
+			}
+			input[type='text'],
+			input[type='password']
+			{
+				background: rgba(50, 50, 50, 1);
+				border: 0;
+				width: 250px;
+				padding: 8px;
+				border-bottom: 2px solid rgba(0,0,0,0.2);
+				margin-bottom: 10px;
+				color: rgb(230, 230, 230);
+				outline: none;
+				transition: all 0.3s ease;
+			}
+			input[type='text']:focus,
+			input[type='password']:focus
+			{
+				border-bottom: 2px solid rgba(255,200,0,1);
+			}
+			input[type='submit']
+			{
+				background: rgba(250, 200, 0, 1);
+				font-weight: bold;
+				color: rgb(30, 30, 30);
+				border: 0;
+				width: 496px;
+				padding: 8px;
+				margin-top: 70px;
+				margin-left: 2px;
+				outline: none;
+				transition: all 0.3s ease;
+			}
+			input[type='submit']:hover
+			{
+				background: rgba(250, 210, 0, 1);
+			}
+			a
+			{
+				display: inline-block;
+				width: 94.5%;
+				padding: 8px 8px 8px 15px;
+				color: rgb(200, 200, 200);
+				text-decoration: none;
+				margin-left: 1px;
+				transition: all 0.3s ease;
+				text-align: left;
+			}
+			a:hover
+			{
+				background: rgba(250, 200, 0, 1);
+				color: rgb(30, 30, 30);
+				padding: 8px 8px 8px 15px;
+			}
+			#a
+			{
+				color: rgb(200, 200, 200);
+				padding: 2px 2px 2px 15px;
+				font-weight: bold;
+			}
+			table td
+			{
+				vertical-align: top;
+			}
+			#desc
+			{
+				resize: none;
+				width: 450px;
+				height: 280px;
+				background: rgb(30, 30, 30);
+				border: none;
+				color: #dddddd;
+				outline: none;
+				overflow: auto;
+			}
+			#desc2
+			{
+				color: rgb(200, 200, 200);
+			}
+			#desc::-webkit-scrollbar 
+			{
+				width: 1em;
+			}
+			#desc::-webkit-scrollbar-track 
+			{
+				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+			}
+			#desc::-webkit-scrollbar-thumb 
+			{
+				background-color: rgb(50, 50, 50);
+				outline: 1px solid slategrey;
+			}
+			#kategorie
+			{
+				max-height: 250px;
+				display: block;
+				
+			}
+			table > tr > a > td
+			{
+				background: red;
+			}
+			#loading
+			{
+				border: 16px solid rgb(255,200,0);
+				border-top: 16px solid rgb(30,30,30);
+				border-bottom: 16px solid rgb(30,30,30);
+				border-radius: 50%;
+				margin-top: 30px;
+				width: 120px;
+				height: 120px;
+				margin-left: auto;
+				margin-right: auto;
+				animation: spin 2s linear infinite;
+			}
+			@keyframes spin 
+			{
+				0% { transform: rotate(0deg); }
+				100% { transform: rotate(360deg); }
+			}
+		</style>
+	</head>
+	<body>
+	<section id="login">
+		<section style="text-algin:center;font-size:25px;padding:10px;">Egzaminy</section>
+		<section id="loading"></section>
+		<section id="a" style="display:none;"><table style="width:100%;"><tr><td style="width:45%;font-weight:bold;">Kategoria</td><td style="width:23%;font-weight:bold;">Koszt</td><td style="width:25%;font-weight:bold;">Zdany</td></tr></table></section>
+		<a href="#" style="display:none;" id="kategoriaa" onclick="processPrawko('a')" onmouseover="changeColorA1()" onmouseout="changeColorA2()"><table style="width:100%;"><tr><td style="width:50%;" id="ka1">Kategoria A</td><td style="width:25%;" id="ka2">$150</td><td style="width:25%;" id="ka3">NIE</td></tr></table></a>
+		<a href="#" style="display:none;" id="kategoriab" onclick="processPrawko('b')" onmouseover="changeColorB1()" onmouseout="changeColorB2()"><table style="width:100%;"><tr><td style="width:50%;" id="kb1">Kategoria B</td><td style="width:25%;" id="kb2">$100</td><td style="width:25%;" id="kb3">NIE</td></tr></table></a>
+		<a href="#" style="display:none;" id="kategoriac" onclick="processPrawko('c')" onmouseover="changeColorC1()" onmouseout="changeColorC2()"><table style="width:100%;"><tr><td style="width:50%;" id="kc1">Kategoria C</td><td style="width:25%;" id="kc2">$300</td><td style="width:25%;" id="kc3">NIE</td></tr></table></a>
+		<input type="submit" id="buttonc" style="display:none;" value="Zamknij" onclick="clickClose()"/>
+	</section>

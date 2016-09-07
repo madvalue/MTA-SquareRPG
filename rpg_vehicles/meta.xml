@@ -1,0 +1,11 @@
+<meta>
+	<script src="vehicles_client.lua" type="client" />
+	<script src="vehicles_server.lua" type="server" />
+	<script src="vehicles_global.lua" type="client" />
+	<script src="vehicles_global.lua" type="server" />
+	
+	<export function="getVehicleCustomName" type="client" />
+	<export function="getVehicleCustomName" type="server" />
+	<export function="createNewVehicle" type="server" />
+	<export function="saveVehicle" type="server" />
+</meta>

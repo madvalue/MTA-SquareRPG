@@ -1,0 +1,177 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+			var texty = [];
+			texty['wprowadzenie'] = "tutaj wprowadzenie XD";
+			texty['zasady'] = "tutaj zasady XD";
+			texty['komendy'] = "tutaj komendy XD";
+			texty['prace'] = "tutaj prace XD";
+			texty['animacje'] = "tutaj animacje XD";
+			texty['premium'] = "tutaj premium XD";
+			texty['aktualizacje'] = "tutaj aktualizacje XD";
+			function changeText(button)
+			{
+				document.getElementById("desc").innerHTML = texty[button];
+			}
+		</script>
+		<style>
+			body
+			{
+				font-family: "Arial", Sans-serif;
+				margin: 0 !important;
+				color: #eeeeee;
+			}
+			#login
+			{
+				background: rgba(30,30,30,1);
+				padding: 0px;
+				width: 650px;
+				height: 350px;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
+			#login .text
+			{
+				color: rgb(230, 230, 230);
+				font-size: 43px;
+				margin-top: 10px;
+				margin-left: 10px;
+				margin-bottom: 30px;
+			}
+			#login .info
+			{
+				color: rgb(230, 230, 230);
+				padding: 8px;
+				font-size: 14px;
+				text-align: left;
+				margin-left: auto;
+				margin-right: auto;
+				width: 250px;
+			}
+			input[type='text'],
+			input[type='password']
+			{
+				background: rgba(50, 50, 50, 1);
+				border: 0;
+				width: 250px;
+				padding: 8px;
+				border-bottom: 2px solid rgba(0,0,0,0.2);
+				margin-bottom: 10px;
+				color: rgb(230, 230, 230);
+				outline: none;
+				transition: all 0.3s ease;
+			}
+			input[type='text']:focus,
+			input[type='password']:focus
+			{
+				border-bottom: 2px solid rgba(255,200,0,1);
+			}
+			input[type='submit']
+			{
+				background: rgba(250, 200, 0, 1);
+				font-weight: bold;
+				color: rgb(30, 30, 30);
+				border: 0;
+				width: 250px;
+				padding: 8px;
+				margin-bottom: 5px;
+				outline: none;
+				transition: all 0.3s ease;
+			}
+			input[type='submit']:hover
+			{
+				background: rgba(250, 210, 0, 1);
+			}
+			a
+			{
+				display: inline-block;
+				width: 90%;
+				padding: 8px 8px 8px 15px;
+				color: rgb(200, 200, 200);
+				text-decoration: none;
+				margin-left: -4px;
+				border-right: 2px solid rgb(40, 40, 40);
+				transition: all 0.3s ease;
+			}
+			a > .selected
+			{
+				background: rgba(250, 200, 0, 1);
+				border-bottom: 2px solid red;
+				color: rgb(30, 30, 30);
+			}
+			a:hover
+			{
+				background: rgba(250, 200, 0, 1);
+				color: rgb(30, 30, 30);
+				padding: 8px 8px 8px 15px;
+			}
+			table td
+			{
+				vertical-align: top;
+			}
+			#desc
+			{
+				resize: none;
+				width: 450px;
+				height: 280px;
+				background: rgb(30, 30, 30);
+				border: none;
+				color: #dddddd;
+				outline: none;
+				overflow: auto;
+			}
+			#desc2
+			{
+				color: rgb(200, 200, 200);
+			}
+			#desc::-webkit-scrollbar 
+			{
+				width: 1em;
+			}
+			#desc::-webkit-scrollbar-track 
+			{
+				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+			}
+			#desc::-webkit-scrollbar-thumb 
+			{
+				background-color: rgb(50, 50, 50);
+				outline: 1px solid slategrey;
+			}
+			#kategorie
+			{
+				max-height: 250px;
+				display: block;
+				
+			}
+		</style>
+	</head>
+	<body>
+	<section id="login">
+		<section style="text-align:left;padding:8px;font-size:25px;margin-left:10px;margin-bottom:-10px;">Panel pomocy</section>
+		<table style="width:100%;height:350px;display:block;">
+			<tr style="display:block;">
+			
+				<td style="width:25%;">
+					<section id="kategorie">
+						<section style='margin-top:5px;'/>
+						<a href="#" id="wprowadzenie" onclick="changeText(this.id)">Wprowadzenie</a>
+						<a href="#" id="zasady" onclick="changeText(this.id)">Zasady rozgrywki</a>
+						<a href="#" id="komendy" onclick="changeText(this.id)">Spis komend</a>
+						<a href="#" id="prace" onclick="changeText(this.id)">Prace dorywcze</a>
+						<a href="#" id="animacje" onclick="changeText(this.id)">Animacje</a>
+						<a href="#" id="premium" onclick="changeText(this.id)">Konto premium</a>
+						<a href="#" id="aktualizacje" onclick="changeText(this.id)">Aktualizacje</a>
+					</section>
+				</td>
+				<td style="padding:15px;">
+					<section id="desc2" style="display:none;">SquareRPG</section>
+					<section id="desc"></section>
+					<script>document.getElementById("desc").innerHTML = texty['wprowadzenie'];</script>
+				</td>
+			
+			</tr>
+		</table>
+	</section>
