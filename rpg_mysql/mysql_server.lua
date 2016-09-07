@@ -17,7 +17,7 @@ addEventHandler("onResourceStart", resourceRoot, mysql_connect)
 function mysql_query(...)
 	local qh = dbQuery(mysql, ...)
 	--outputDebugString("[value_mysql] QUERY: "..(...))
-	if not qh then return end
+	if not qh then return false end
 	local result, num_affected_rows, last_insert_id = dbPoll(qh, -1)
 	return result, num_affected_rows, last_insert_id
 end
