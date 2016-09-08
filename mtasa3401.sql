@@ -50,19 +50,6 @@ CREATE TABLE IF NOT EXISTS `rpg_accounts` (
   `onlinetime` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`uid`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=5 ;
-
---
--- Zrzut danych tabeli `rpg_accounts`
---
-
-INSERT INTO `rpg_accounts` (`uid`, `username`, `password`, `email`, `regdate`, `lastlogin`, `serial`, `ip`, `health`, `armor`, `skin`, `position`, `money`, `bankmoney`, `gamescore`, `premium`, `job`, `jobmoney`, `pjA`, `pjB`, `pjC`, `onlinetime`) VALUES
-(1, 'value', '5ac4c7205f2bdc5bc45348eb0c820dd7', 'value2k@gmail.com', '2016-08-23 11:15:29', '0000-00-00 00:00:00', '1F36F20E57028600C193191B83BB8483', '192.168.56.1', 100, 0, 39, '-1900.9326171875, 928.6376953125, 34.728317260742, 90.06591796875, 0, 0', 90487, 44321, 223, '2018-08-29 17:00:00', 0, 0, 1, 1, 1, 104952),
-(2, 'DreamsXX2PL', 'F801E0458851628209F1B4F65825FCCB', 'dreamsxx2@wp.pl', '2016-08-27 17:27:23', '0000-00-00 00:00:00', '85B995F2E0AA6921EBE8DA27AC85FCA1', '88.199.45.108', 100, 0, 81, '2724.169921875, -2122.9501953125, 26.212211608887, 111.52117919922, 0, 0', 0, 128374, 0, '2019-08-27 00:00:00', 0, 0, 1, 1, 1, 24317),
-(3, 'AL0N', '202CB962AC59075B964B07152D234B70', 'yosukestream@gmail.com', '2016-08-28 11:05:35', '0000-00-00 00:00:00', '75137E78BF9493EDC2D214722770B053', '77.254.34.86', 100, 0, 37, '-1812.4345703125, 920.5615234375, 24.447202682495, 272.74725341797, 0, 0', 99994728, 0, 0, '2018-08-29 00:00:00', 0, 0, 1, 1, 0, 30676),
-(4, 'Karuzo', '2A10AB244BD9AAF776832117BF7E69F2', 'Majkel6023@onet.pl', '2016-08-31 16:38:29', '0000-00-00 00:00:00', '67B39C8BA7CD6254002C2BD0D25B36F2', '37.47.8.187', 94, 0, 33, '-2710.193359375, 357.1572265625, 4.0733036994934, 203.03297424316, 0, 0', 654, 0, 0, '0000-00-00 00:00:00', 2, 89, 0, 1, 1, 7150);
-
--- --------------------------------------------------------
-
 --
 -- Struktura tabeli dla  `rpg_admins`
 --
